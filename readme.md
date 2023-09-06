@@ -3,6 +3,9 @@
 # Arcade
 This resource enhances the Arcade experience within the QBCore and Qbox Framework environments.
 
+## 💾 Dependencies
+- [ox_lib](https://github.com/overextended/ox_lib/releases)
+
 ## 🔌 Installation
 To get started with the MTC Polaroid resource, follow these steps:
 
