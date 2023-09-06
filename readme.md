@@ -21,3 +21,7 @@ To change the item you  can edit ```server/sv_main.lua``` and change the item.
 ## 🪙 Credits
 A special thanks to the following people:
 - [Xogy](https://github.com/Xogy/rcore_arcade) - for the original base of the code.
+
+## 👉 Join our community
+
+[![Discord](https://discord.com/api/guilds/1075048579758035014/widget.png?style=banner2)](https://discord.gg/cFuv5BMWzK)
