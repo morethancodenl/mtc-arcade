@@ -8,6 +8,7 @@ WIP:
 - In kunnen stellen bij hacks hoeveel tokens het kost.
 - Wanner iemand niet beschikt over een token bij de game melding in de zin van "Je hebt X token(s) nodig om dit spel te kunnen spelen" (in locales).
 
+![Arcade](https://i.imgur.com/5nO4C5G.png)
 
 # Arcade
 This resource enhances the Arcade experience within the QBCore and Qbox Framework environments.
@@ -16,7 +17,7 @@ This resource enhances the Arcade experience within the QBCore and Qbox Framewor
 To get started with the MTC Polaroid resource, follow these steps:
 
 1. Clone this repository and place the files into your designated resources folder.
-2. Rename the script file to ```mtc-arcade``.
+2. Rename the script file to ```mtc-arcade```.
 3. Configure you're location settings in ```shared/sh_main.lua```.
 3. Set up the necessary inventory items.
 
@@ -39,3 +40,7 @@ You can find the images for the items mentioned below in the ```images``` direct
     ['description'] = 'Om een spelletje mee te spelen in de Arcade.'
 },
 ```
+
+## 🪙 Credits
+A special thanks to the following people:
+- [Xogy](https://github.com/Xogy/rcore_arcade) - for the original base of the code.
