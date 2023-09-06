@@ -3,7 +3,7 @@ local Translations = {
         arcade = "Arcade kast",
         special = "Speciale knop",   
 
-        purchase_token = "Koop token | Prijs: %s",
+        purchase_token = "Koop token | Prijs: € %s",
         amount = "Aantal",
     },
 

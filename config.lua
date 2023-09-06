@@ -7,11 +7,12 @@ Config.TokenPrice = "5"
 Config.PaymentType = "cash" -- WIP
 
 Config.Zones = {
-    vector3(-1654.7384033203, -1063.3900146484, 12.160423278809)
+    vector3(-1290.31, -298.4, 36.05),
+    vector3(-1291.52, -300.7, 36.05)
 }
 
 Config.blip = {
-    coords = vector3(-1655.7844238281, -1066.8046875, 12.160425186157),
+    coords = vector3(-1291.52, -300.7, 36.05),
     label = "Arcade",
     sprite = 484,
     color = 0,

@@ -3,7 +3,7 @@ local Translations = {
         arcade = "Arcade cabinet",
         special = "Special button!",    
 
-        purchase_token = "Purchase token | Price %s",
+        purchase_token = "Purchase token | Price $ %s",
         amount = "Amount",
     },
 
