@@ -3,7 +3,7 @@ local function GenerateOptions()
     for i = 1, #Config.games, 1 do
         options[#options + 1] = {
             label = Config.games[i].label,
-            icon = Config.games[i].icon or 'fa-gamepad',  -- WIP: Verplaatsen naar config voor fa-gamepad
+            icon = Config.games[i].icon or 'fa-gamepad',
         }
     end
     return options
@@ -14,7 +14,7 @@ local function GenerateHacks()
     for i = 1, #Config.hacks, 1 do
         options[#options + 1] = {
             label = Config.hacks[i].label,
-            icon = Config.hacks[i].icon or 'fa-gamepad',  -- WIP: Verplaatsen naar config voor fa-gamepad
+            icon = Config.hacks[i].icon or 'fa-gamepad',
         }
     end
     return options

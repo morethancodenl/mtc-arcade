@@ -2,13 +2,24 @@ Config = {}
 QBCore = exports['qb-core']:GetCoreObject()
 
 -- Item that players get when they buy tokens and use to pay for a game.
-Config.TokenItem = "gametoken" -- WIP (Item name: Game Token)
+Config.TokenItem = "gametoken"
 Config.TokenPrice = "5"
-Config.PaymentType = "cash" -- WIP
+Config.PaymentType = "cash" -- cash, bank, crypto
 
+-- Arcade coin shop points
 Config.Zones = {
     vector3(-1290.31, -298.4, 36.05),
     vector3(-1291.52, -300.7, 36.05)
+}
+
+-- Arcade coin shop NPC's
+Config.shops = {
+    {
+        model = 'ig_jimmydisanto',
+        coords = vector4(-1292.98, -301.59, 35.05, 300.74),
+        scenario = 'WORLD_HUMAN_CLIPBOARD',
+        icon = 'fas fa-cart-shopping'
+    }
 }
 
 Config.blip = {
@@ -60,55 +71,16 @@ Config.games = {
 
 Config.hacks = {
     {
-        label = "Rondjes",
+        label = "Lockpick",
         icon = 'fa-regular fa-circle',
         action = function()
             exports['ps-ui']:Circle(function(success)
                 if success then
-                    QBCore.Functions.Notify("Je hebt de hack voltooid!", "success")
+                    QBCore.Functions.Notify("You opened the lock", "success")
                 else
-                    QBCore.Functions.Notify("Je hebt de hack gefaald!", "error")
+                    QBCore.Functions.Notify("You closed the lock", "error")
                 end
             end, 2, 20) -- NumberOfCircles, MS
         end
     },
-    {
-        label = "Speurtocht",
-        icon = 'search',
-        action = function()
-            exports['ps-ui']:Maze(function(success)
-                if success then
-                    QBCore.Functions.Notify("Je hebt de hack voltooid!", "success")
-                else
-                    QBCore.Functions.Notify("Je hebt de hack gefaald!", "error")
-                end
-            end, 20)
-        end
-    },
-    {
-        label = "VR",
-        icon = 'vr-cardboard',
-        action = function()
-            exports['ps-ui']:VarHack(function(success)
-                if success then
-                    QBCore.Functions.Notify("Je hebt de hack voltooid!", "success")
-                else
-                    QBCore.Functions.Notify("Je hebt de hack gefaald!", "error")
-                end
-            end, math.random(3,5), math.random(6,9))
-        end
-    },
-    {
-        label = "blokjes",
-        icon = 'fa-chess-board',
-        action = function()
-            exports['ps-ui']:Thermite(function(success)
-                if success then
-                    QBCore.Functions.Notify("Je hebt de hack voltooid!", "success")
-                else
-                    QBCore.Functions.Notify("Je hebt de hack gefaald!", "error")
-                end
-             end, 10, 5, 3) -- Time, Gridsize (5, 6, 7, 8, 9, 10), IncorrectBlocks
-        end
-    }
 }

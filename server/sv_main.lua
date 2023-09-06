@@ -1,3 +1,20 @@
+CreateThread(function()
+    QBCore.Functions.AddItems({
+        ['gametoken'] = {
+            ['name'] = 'gametoken',
+            ['label'] = 'Game Token',
+            ['weight'] = 100,
+            ['type'] = 'item',
+            ['image'] = 'gametoken.png',
+            ['unique'] = false,
+            ['useable'] = false,
+            ['shouldClose'] = false,
+            ['combinable'] = nil,
+            ['description'] = 'Game token.'
+        }
+    })
+end)
+
 lib.callback.register('qb-arcade:server:hasToken', function(source)
     local src = source
     local player = QBCore.Functions.GetPlayer(src)
@@ -17,11 +34,7 @@ RegisterNetEvent('qb-arcade:server:buyToken', function(amount)
 
     if not player then return end
     if not player.Functions.RemoveMoney(Config.PaymentType, price, 'arcade-token-purchase') then 
-        TriggerClientEvent('ox_lib:notify', source, {
-            title = Lang:t('error.not_enough_money_title'),
-            description = Lang:t('error.not_enough_money'),
-            type = 'error',
-        })
+        TriggerClientEvent('QBCore:Notify', source, Lang:t('error.not_enough_money'))
         return 
     end
 
