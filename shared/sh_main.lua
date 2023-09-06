@@ -12,7 +12,7 @@ Config.Zones = {
 }
 
 Config.blip = {
-    coords = vector3(-1291.52, -300.7, 36.05),
+    coords = vector3(-1286.24, -302.04, 36.03),
     label = "Arcade",
     sprite = 484,
     color = 0,

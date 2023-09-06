@@ -7,7 +7,7 @@ client_scripts {
 }
 
 server_scripts {
-	'server.lua',
+	'server/*.lua',
 }
 
 shared_scripts {
@@ -15,16 +15,14 @@ shared_scripts {
 	'@qb-core/shared/locale.lua',
     'locales/en.lua',
     'locales/*.lua',
-	'config.lua'
+	'shared/*.lua'
 }
 
 files {
-	"html/css/style.css",
-	"html/css/reset.css",
-	"html/css/img/monitor.png",
-	"html/css/img/table.png",
+	"html/css/*.css",
+	"html/css/img/*.png",
 	"html/*.html",
-	"html/scripts/listener.js",
+	"html/scripts/*.js",
 }
 
 ui_page "html/index.html"
