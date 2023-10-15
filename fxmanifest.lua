@@ -2,7 +2,7 @@ fx_version 'adamant'
 game 'gta5'
 lua54 'yes'
 
-author 'More Then Code'
+author 'More Than Code'
 description 'Arcade (mtc-arcade) 1.0.0'
 version '1.0.0'
 
