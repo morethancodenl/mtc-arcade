@@ -1,4 +1,4 @@
-![Arcade](https://i.imgur.com/GOrkb9r.png)
+![arcade](https://i.imgur.com/Pw0TNkD.png)
 
 # Arcade
 This resource enhances the Arcade experience within the QBCore and Qbox Framework environments.
