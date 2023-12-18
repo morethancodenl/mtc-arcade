@@ -59,12 +59,17 @@ Config.games = {
     },
     {
         label = 'Duke Nukem 3D',
-        args = string.format("nui://qb-arcade/html/msdos.html?url=%s&params=%s", "https://www.retrogames.cz/dos/zip/duke3d.zip", "./DUKE3D.EXE"),
+        args = string.format("nui://mtc-arcade/html/msdos.html?url=%s&params=%s", "https://www.retrogames.cz/dos/zip/duke3d.zip", "./DUKE3D.EXE"),
         icon = 'gun'
     },
     {
         label = 'DOOM',
-        args = string.format("nui://qb-arcade/html/msdos.html?url=%s&params=%s", "https://www.retrogames.cz/dos/zip/Doom.zip", "./DOOM.EXE"),
+        args = string.format("nui://mtc-arcade/html/msdos.html?url=%s&params=%s", "https://www.retrogames.cz/dos/zip/Doom.zip", "./DOOM.EXE"),
+        icon = 'gun'
+    },
+    {
+        label = 'Wolfenstein 3D',
+        args = string.format("nui://mtc-arcade/html/msdos.html?url=%s&params=%s", "https://www.retrogames.cz/dos/zip/Wolfenstein3D.zip", "./WOLF3D.EXE"),
         icon = 'gun'
     }
 }
